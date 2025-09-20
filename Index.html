@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manjeet Kumar | Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #f5f7fa;
+      --text-color: #333;
+      --card-bg: #fff;
+      --primary: #007bff;
+    }
+    body.dark {
+      --bg-color: #1e1e1e;
+      --text-color: #eee;
+      --card-bg: #2c2c2c;
+      --primary: #ff9800;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: var(--card-bg);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 5px solid var(--primary);
+      object-fit: cover;
+    }
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+      color: var(--primary);
+      font-weight: bold;
+    }
+    .btn-toggle {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      padding: 8px 15px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: var(--primary);
+      border-bottom: 3px solid var(--primary);
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    /* Skills Progress */
+    .skill {
+      margin: 10px 0;
+    }
+    .skill-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .progress {
+      background: #ddd;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      background: var(--primary);
+      height: 12px;
+      width: 0;
+      transition: width 1s ease-in-out;
+    }
+    /* Contact */
+    .contact a {
+      display: block;
+      margin: 5px 0;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: var(--card-bg);
+      margin-top: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <button class="btn-toggle" onclick="toggleDark()">Dark Mode</button>
+
+<header>
+  <img src="profile.jpg" alt="Profile Picture">
+  <h1>Manjeet Kumar</h1>
+  <p>Aspiring Web Developer</p>
+</header>
+
+  <section>
+    <h2>Education</h2>
+    <div class="card">
+      <p><b>College:</b> Jagannath University , jaipur</p>
+      <p><b>Course:</b> Diploma in Computer Science and Engineering</p>
+      <p><b>Batch:</b> 2024 - 2027</p>
+    </div>
+  </section>
+  
+  <section>
+    <h2>Skills</h2>
+    <div class="card skill">
+      <div class="skill-name">HTML & CSS</div>
+      <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
+    </div>
+    <div class="card skill">
+      <div class="skill-name">Python</div>
+      <div class="progress"><div class="progress-bar" style="width:65%"></div></div>
+    </div>
+    <div class="card skill">
+      <div class="skill-name">JavaScript</div>
+      <div class="progress"><div class="progress-bar" style="width:50%"></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Career Goal</h2>
+    <div class="card">
+      <p>To become a top-level web developer and cybersecurity enthusiast, contributing to the safety and innovation of digital infrastructures.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Personal Portfolio Website</h3>
+      <p>Designed using HTML & CSS to showcase my skills and projects.</p>
+    </div>
+    <div class="card">
+      <h3>Simple Login System</h3>
+      <p>A Python Flask-based login system for beginners. Coming soon!</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p><b>Email:</b> manjeetk62041@gmail.com</p>
+      <a href="https://github.com/Manjeet0998" target="_blank">GitHubg</a>
+      <a href="https://instagram.com/manjeet_0998" target="_blank">Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Manjeet Kumar</p>
+  </footer>
+
+  <script>
+    function toggleDark() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
